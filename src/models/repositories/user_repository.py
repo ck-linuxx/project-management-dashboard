@@ -8,8 +8,6 @@ class UserRepository:
   def creater_user(self, user_infos: Dict) -> None:
     cursor = self.__conn.cursor()
 
-
-
     find_email =  cursor.execute(
       '''
         SELECT user_email
